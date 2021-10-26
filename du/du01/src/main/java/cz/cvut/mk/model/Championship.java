@@ -23,11 +23,13 @@ public class Championship {
         }*/
 
         if (this.teams.size() < 2) {
-            throw new IllegalStateException("less than two matches registered");
+            throw new IllegalStateException("less than two team registered");
         }
-        for (int i = 0; i < teams.size(); i++) {
-            for (int j = i + 1; j < teams.size(); j++) {
-                matches.add(new Match(teams.get(i), teams.get(j)));
+        for (Team i : teams) {
+            for (Team j : teams) {
+                if (!i.equals(j)) {
+                    matches.add(new Match(i, j));
+                }
             }
         }
     }
