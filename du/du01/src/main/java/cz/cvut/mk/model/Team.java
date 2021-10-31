@@ -25,6 +25,7 @@ public class Team {
         return Objects.equals(name, team.name);
     }
 
+
     @Override
     public int hashCode() {
         return Objects.hash(name);

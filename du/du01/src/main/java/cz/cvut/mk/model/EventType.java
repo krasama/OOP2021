@@ -5,5 +5,5 @@ public enum EventType {
     END,
     GOAL,
     PENALTY,
-    FAUL
+    FAULT
 }

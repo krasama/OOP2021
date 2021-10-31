@@ -22,7 +22,7 @@ public class Playground {
         championship.registerTeam(team4);
 
         championship.generateMatches();
-        System.out.println();
+        //System.out.println();
         championship.simulateMatches();
     }
 

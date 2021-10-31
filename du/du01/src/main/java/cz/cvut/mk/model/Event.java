@@ -25,32 +25,37 @@ public class Event {
                 ", čas=" + eventDateTime +
                 '}';
     }
-    public static void start(){
+    public static Event start(){
         Event event = new Event();
         event.setType(EventType.START);
         System.out.println(event);
+        return event;
     }
 
-    public static void stop(){
+    public static Event stop(){
         Event event = new Event();
         event.setType(EventType.END);
         System.out.println(event);
+        return event;
     }
-    public static void goal(){
+    public static Event goal(){
         Event event = new Event();
         event.setType(EventType.GOAL);
         System.out.println(event);
+        return event;
     }
 
-    public static void penalty(){
+    public static Event penalty(){
         Event event = new Event();
         event.setType(EventType.PENALTY);
         System.out.println(event);
+        return event;
     }
 
-    public static void faul(){
+    public static Event fault(){
         Event event = new Event();
-        event.setType(EventType.FAUL);
+        event.setType(EventType.FAULT);
         System.out.println(event);
+        return event;
     }
 }
